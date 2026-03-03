@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Nisha Rajput — Projects</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <header class="nav">
+    <a class="brand" href="index.html">←</a>
+    <nav class="nav-links">
+      <a href="index.html#work" class="link">Featured</a>
+      <a href="index.html#contact" class="link">Contact</a>
+      <a class="btn" href="Nisha_Rajput_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+    </nav>
+    <button class="burger" aria-label="Open menu">
+      <span></span><span></span>
+    </button>
+  </header>
+
+  <main class="projects-page">
+    <div class="hero-bg small">
+      <div class="bg-image bg1"></div>
+      <div class="bg-image bg2"></div>
+      <div class="bg-vignette"></div>
+      <div class="bg-noise"></div>
+    </div>
+    <div class="code-wall" aria-hidden="true"></div>
+
+    <section class="projects-header reveal">
+      <h1 class="projects-title">Projects</h1>
+      <p class="projects-sub">
+        Case-study style, clean and fast — with motion and a colorful tech vibe.
+      </p>
+    </section>
+
+    <section class="case reveal" id="proj-aura">
+      <div class="case-top">
+        <h2>AURA — Multimodal Emotion Recognition</h2>
+        <div class="case-tags">
+          <span class="chip">DistilRoBERTa</span>
+          <span class="chip">Wav2Vec2</span>
+          <span class="chip">REST API</span>
+        </div>
+      </div>
+      <div class="case-grid">
+        <div class="card">
+          <h3>What</h3>
+          <p>Multimodal classification pipeline using text + audio features with scalable inference endpoints.</p>
+        </div>
+        <div class="card">
+          <h3>Impact</h3>
+          <ul class="bullets">
+            <li>15,000+ labeled samples</li>
+            <li>88% predictive accuracy</li>
+            <li>500+ concurrent evaluation requests</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Stack</h3>
+          <p>Python, Transformers, REST, data preprocessing pipeline</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="case reveal" id="proj-docflow">
+      <div class="case-top">
+        <h2>Document Workflow Automation & ROI Analysis</h2>
+        <div class="case-tags">
+          <span class="chip">Process Mapping</span>
+          <span class="chip">Automation</span>
+          <span class="chip">ROI</span>
+        </div>
+      </div>
+      <div class="case-grid">
+        <div class="card">
+          <h3>What</h3>
+          <p>Optimized routing workflow, eliminated redundant steps, created automation plan and ROI model.</p>
+        </div>
+        <div class="card">
+          <h3>Impact</h3>
+          <ul class="bullets">
+            <li>40% redundant handling removed</li>
+            <li>780+ annual hours recovered</li>
+            <li>22% operational cost reduction projection</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Deliverables</h3>
+          <p>As-Is / To-Be flow, SOP outline, ROI calculation framework</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="case reveal" id="proj-kpi">
+      <div class="case-top">
+        <h2>E-Commerce KPI Dashboard via SQL Extraction</h2>
+        <div class="case-tags">
+          <span class="chip">SQL</span>
+          <span class="chip">CTEs</span>
+          <span class="chip">Analytics</span>
+        </div>
+      </div>
+      <div class="case-grid">
+        <div class="card">
+          <h3>What</h3>
+          <p>Extracted, joined, aggregated and analyzed 100,000+ transactional records to generate KPI insights.</p>
+        </div>
+        <div class="card">
+          <h3>Impact</h3>
+          <ul class="bullets">
+            <li>High-value segment discovery</li>
+            <li>18% targeting precision improvement projection</li>
+            <li>Region-wise investment reallocation strategy</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Stack</h3>
+          <p>MySQL, advanced SQL queries, KPI modeling</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <a class="muted" href="index.html">← Home</a>
+      <span>© <span id="year"></span> Nisha Rajput</span>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
