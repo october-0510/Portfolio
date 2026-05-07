@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Nisha Rajput — Projects</title>
+  <title>Nisha Rajput — AI/ML Projects</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -15,7 +15,9 @@
     <nav class="nav-links">
       <a href="index.html#work" class="link">Featured</a>
       <a href="index.html#contact" class="link">Contact</a>
-      <a class="btn" href="Nisha_Rajput_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+      <a class="link" href="https://linkedin.com/in/rajputnisha05" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="link" href="https://github.com/your-github-username" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn" href="Nisha_Rajput_Resume_2026.pdf" target="_blank" rel="noopener">Resume</a>
     </nav>
     <button class="burger" aria-label="Open menu">
       <span></span><span></span>
@@ -32,95 +34,101 @@
     <div class="code-wall" aria-hidden="true"></div>
 
     <section class="projects-header reveal">
-      <h1 class="projects-title">Projects</h1>
+      <h1 class="projects-title">AI/ML Projects</h1>
       <p class="projects-sub">
-        Case-study style, clean and fast — with motion and a colorful tech vibe.
+        Multimodal deep learning, agentic AI, and optimization — built end-to-end.
       </p>
     </section>
 
     <section class="case reveal" id="proj-aura">
       <div class="case-top">
-        <h2>AURA — Multimodal Emotion Recognition</h2>
+        <h2>AURA — Multimodal Emotion Recognition System</h2>
         <div class="case-tags">
-          <span class="chip">DistilRoBERTa</span>
+          <span class="chip">RoBERTa</span>
           <span class="chip">Wav2Vec2</span>
-          <span class="chip">REST API</span>
+          <span class="chip">GPT-4o</span>
+          <span class="chip">FastAPI</span>
         </div>
       </div>
       <div class="case-grid">
         <div class="card">
           <h3>What</h3>
-          <p>Multimodal classification pipeline using text + audio features with scalable inference endpoints.</p>
+          <p>End-to-end multimodal pipeline that fine-tunes transformer models on text and speech to detect emotion, then dynamically shapes an LLM's response tone via FastAPI.</p>
         </div>
         <div class="card">
           <h3>Impact</h3>
           <ul class="bullets">
-            <li>15,000+ labeled samples</li>
-            <li>88% predictive accuracy</li>
-            <li>500+ concurrent evaluation requests</li>
+            <li>7-class emotion classification (text + speech)</li>
+            <li>α-weighted late fusion of multimodal vectors</li>
+            <li>Sub-second inference latency via FastAPI</li>
+            <li>Pipeline: Whisper ASR → ERC → fusion → policy → LLM</li>
           </ul>
         </div>
         <div class="card">
           <h3>Stack</h3>
-          <p>Python, Transformers, REST, data preprocessing pipeline</p>
+          <p>Python, PyTorch, HuggingFace Transformers, RoBERTa (GoEmotions), Wav2Vec2 (CREMA-D), OpenAI API, FastAPI, Whisper ASR, librosa, Docker</p>
         </div>
       </div>
     </section>
 
-    <section class="case reveal" id="proj-docflow">
+    <section class="case reveal" id="proj-weather">
       <div class="case-top">
-        <h2>Document Workflow Automation & ROI Analysis</h2>
+        <h2>Weather Predictor — Agentic AI System</h2>
         <div class="case-tags">
-          <span class="chip">Process Mapping</span>
-          <span class="chip">Automation</span>
-          <span class="chip">ROI</span>
+          <span class="chip">smolagents</span>
+          <span class="chip">LiteLLM</span>
+          <span class="chip">Tool Use</span>
+          <span class="chip">Phoenix Tracing</span>
         </div>
       </div>
       <div class="case-grid">
         <div class="card">
           <h3>What</h3>
-          <p>Optimized routing workflow, eliminated redundant steps, created automation plan and ROI model.</p>
+          <p>A multi-agent system using HuggingFace smolagents — a manager-agent orchestrates a search-agent for autonomous multi-step reasoning and real-time web retrieval, with a custom tool to parse unstructured weather data.</p>
         </div>
         <div class="card">
           <h3>Impact</h3>
           <ul class="bullets">
-            <li>40% redundant handling removed</li>
-            <li>780+ annual hours recovered</li>
-            <li>22% operational cost reduction projection</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>Deliverables</h3>
-          <p>As-Is / To-Be flow, SOP outline, ROI calculation framework</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="case reveal" id="proj-kpi">
-      <div class="case-top">
-        <h2>E-Commerce KPI Dashboard via SQL Extraction</h2>
-        <div class="case-tags">
-          <span class="chip">SQL</span>
-          <span class="chip">CTEs</span>
-          <span class="chip">Analytics</span>
-        </div>
-      </div>
-      <div class="case-grid">
-        <div class="card">
-          <h3>What</h3>
-          <p>Extracted, joined, aggregated and analyzed 100,000+ transactional records to generate KPI insights.</p>
-        </div>
-        <div class="card">
-          <h3>Impact</h3>
-          <ul class="bullets">
-            <li>High-value segment discovery</li>
-            <li>18% targeting precision improvement projection</li>
-            <li>Region-wise investment reallocation strategy</li>
+            <li>Manager + search agent hierarchy</li>
+            <li>Custom regex-based WeatherParserTool</li>
+            <li>Full agent observability via OpenTelemetry</li>
+            <li>Transparent reasoning trace visualization</li>
           </ul>
         </div>
         <div class="card">
           <h3>Stack</h3>
-          <p>MySQL, advanced SQL queries, KPI modeling</p>
+          <p>Python, HuggingFace smolagents, LiteLLM (GPT-4.1-nano), OpenAI API, DuckDuckGo Search, Arize Phoenix, OpenTelemetry, Jupyter</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="case reveal" id="proj-sheo">
+      <div class="case-top">
+        <h2>SHEO — Smart Home Energy Optimizer</h2>
+        <div class="case-tags">
+          <span class="chip">Pyomo</span>
+          <span class="chip">GLPK</span>
+          <span class="chip">Linear Programming</span>
+          <span class="chip">Optimization</span>
+        </div>
+      </div>
+      <div class="case-grid">
+        <div class="card">
+          <h3>What</h3>
+          <p>Multi-objective LP optimizer that schedules household appliance usage across 24 hourly intervals under a 7 kW power cap — balancing cost, carbon, and comfort with configurable user preferences.</p>
+        </div>
+        <div class="card">
+          <h3>Impact</h3>
+          <ul class="bullets">
+            <li>3 user profiles: cost_saver, eco_warrior, comfort_first</li>
+            <li>15–30% projected electricity cost savings</li>
+            <li>Contract-aware tariff logic (per-state pricing)</li>
+            <li>Structured JSON output for downstream integration</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Stack</h3>
+          <p>Python, Pyomo, GLPK solver, JSON schema design, optimization modeling</p>
         </div>
       </div>
     </section>
